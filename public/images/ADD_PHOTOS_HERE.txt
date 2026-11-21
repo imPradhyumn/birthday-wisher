@@ -1,0 +1,1 @@
+Add hero.jpg and photo-01.jpg through photo-09.jpg to this folder. See README.md.
