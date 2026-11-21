@@ -162,6 +162,7 @@ function Countdown() {
         >
           {[
             [days, "DAYS"],
+            
             [hours, "HOURS"],
             [minutes, "MINUTES"],
             [seconds, "SECONDS"],
