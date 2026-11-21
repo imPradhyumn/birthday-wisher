@@ -452,6 +452,20 @@ button {
 .letter-card > p {
   white-space: pre-line;
 }
+
+.next-button {
+ background-color: white;
+ padding: 0.2rem 0.5rem;
+ border-radius: 12px;
+ border: 1px solid rgb(255, 135, 155);
+ color: rgb(255, 135, 155);
+ width: fit-content;
+ display: flex;
+ gap:0.3rem;
+ align-items: center;
+ cursor: pointer;
+}
+
 .photo-4 {
   --tilt: -1.3deg;
   margin-top: -14px;
@@ -565,11 +579,8 @@ button {
   margin-top: auto;
 }
 .letter-section {
-  padding: 125px 0;
-  display: grid;
-  grid-template-columns: 0.45fr 1fr;
-  gap: 55px;
-  align-items: start;
+  padding: 100px 0;
+  
 }
 .letter-label {
   display: flex;
@@ -583,13 +594,14 @@ button {
 .letter-card {
   background: #eee4dc;
   padding: clamp(30px, 6vw, 75px);
-  position: relative;
+  margin: 0 auto;
+  width: fit-content;
 }
 .letter-top {
   display: flex;
   justify-content: space-between;
   gap: 15px;
-  font-size: 8px;
+  font-size: 20px;
   letter-spacing: 0.13em;
   color: #8e8178;
 }
@@ -643,7 +655,7 @@ button {
   margin-right: 8px;
 }
 .finale {
-  min-height: 570px;
+  min-height: 100vh;
   background: #302b27;
   color: #f8f2ec;
   position: relative;
