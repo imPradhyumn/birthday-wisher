@@ -118,7 +118,7 @@ export default function App() {
     return () => clearInterval(timer);
   }, [unlocked]);
 
-  // if (!unlocked) return <Countdown />;
+  if (!unlocked) return <Countdown />;
 
   return (
     <main>
