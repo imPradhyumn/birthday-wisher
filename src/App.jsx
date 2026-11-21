@@ -42,47 +42,47 @@ const birthdayNote =
   "I hope this year is kind to you, full of unexpected little joys, big wins, and reasons to laugh until your cheeks hurt. Keep being wonderfully, unapologetically you.";
 const memories = [
   {
-    image: "/public/images/1.jpg",
+    image: "/images/1.JPG",
     caption: "हसीन",
     tag: "THE SMILE",
   },
   {
-    image: "/public/images/2.jpg",
+    image: "/images/2.jpg",
     caption: "लावण्यपूर्ण",
     tag: "THE MOMENT",
   },
   {
-    image: "/public/images/11.jpg",
+    image: "/images/11.jpg",
     caption: "A sight to my sore eyes",
     tag: "THE LOOK",
   },
   {
-    image: "/public/images/4.jpg",
+    image: "/images/4.jpg",
     caption: "Be-hadd खूबसूरत",
     tag: "THE VIBE",
   },
   {
-    image: "/public/images/5.jpg",
+    image: "/images/5.jpg",
     caption: "चलता फिरता आफताब 🌝",
     tag: "THE GLOW",
   },
   {
-    image: "/public/images/6.jpg",
+    image: "/images/6.jpg",
     caption: "Pyaarriiii",
     tag: "THE ICON",
   },
   {
-    image: "/public/images/7.jpg",
+    image: "/images/7.jpg",
     caption: "Rashk-e-qamar 🌝",
     tag: "THE CLASSIC",
   },
   {
-    image: "/public/images/10.jpg",
+    image: "/images/10.jpg",
     caption: "A walking poetry",
     tag: "THE MASTERPIECE",
   },
   {
-    image: "/public/images/9.jpg",
+    image: "/images/9.jpg",
     caption: "You're a 10/10 but always be my 11:11 😭",
     tag: "THE EXTRA",
   },
@@ -154,7 +154,7 @@ function Countdown() {
           <em> 4 you 👉 👈</em>
         </h1>
         <p>
-          This corner of opens on <strong>16 December at 7:21 AM</strong>.
+          This corner opens on <strong>16 December at 7:21 AM</strong>.
         </p>
         <div
           className="countdown-grid"
@@ -254,7 +254,7 @@ export default function App() {
     return () => clearTimeout(timer);
   }, [confetti]);
 
-  // if (!unlocked) return <Countdown />;
+  if (!unlocked) return <Countdown />;
 
   const toggleReason = (i) =>
     setRevealed((old) =>
@@ -297,7 +297,7 @@ export default function App() {
         <Reveal delay={0.2} className="hero-visual">
           <div className="hero-photo-wrap">
             <img
-              src="public/images/8.png"
+              src="/images/8.PNG"
               alt="Birthday girl"
               onError={(e) => {
                 e.currentTarget.style.display = "none";
