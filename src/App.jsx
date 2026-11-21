@@ -162,7 +162,7 @@ function Countdown() {
         >
           {[
             [days, "DAYS"],
-            
+
             [hours, "HOURS"],
             [minutes, "MINUTES"],
             [seconds, "SECONDS"],
@@ -255,7 +255,7 @@ export default function App() {
     return () => clearTimeout(timer);
   }, [confetti]);
 
-  if (!unlocked) return <Countdown />;
+  // if (!unlocked) return <Countdown />;
 
   const toggleReason = (i) =>
     setRevealed((old) =>
